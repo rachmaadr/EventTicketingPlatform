@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .flex::before,
+    .flex::after {
+        display: none !important;
+    }
+
+    img{
+        @apply object-cover;
+    }
+
+    body{
+        @apply relative font-poppins text-white bg-dark-indigo;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        @apply appearance-none
+    }
+}
+
+@layer components{
+    .nav-link-item {
+        @apply text-base font-normal cursor-pointer hover:text-white hover:underline underline-offset-2 transition-all
+    }
+
+    /* .nav-link-item.active{
+        @apply font-semibold;
+    } */
+
+    .btn-primary {
+        @apply py-3 px-[22px] rounded-[50px] bg-primary text-white font-semibold text-sm md:text-base text-center inline-flex justify-center items-center gap-3
+    }
+
+    .btn-secondary {
+        @apply py-3 px-[22px] rounded-[50px] bg-secondary text-dark-indigo font-semibold text-sm md:text-base text-center inline-flex justify-center items-center gap-3
+    }
+
+    .check-appearance {
+        @apply w-6 h-6 absolute right-5 border-2 border-solid border-[#9285AC] block rounded-full
+    }
+
+    .check-appearance::before {
+        @apply block absolute content-[''] rounded-full w-[14px] h-[14px] top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2
+    }
+
+    input[type=radio]:checked ~ .check-appearance { /* the same with tailwind peer-checked: */
+        @apply border-persian-pink before:bg-persian-pink
+    }
+}
+
+@layer utilities {
+    
+}

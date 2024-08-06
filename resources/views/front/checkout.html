@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - Design 101: Product Manager | Tickety</title>
+
+        <link rel="shortcut icon" href="/public/assets/svgs/logo-mark.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/public/css/main.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+
+    <body class="overflow-x-hidden">
+        <nav class="container relative max-w-screen-xl py-4 lg:py-10">
+            <div class="flex flex-col justify-between w-full lg:flex-row lg:items-center">
+                <!-- Logo & Toggler Button here -->
+                <div class="flex items-center justify-between">
+                    <!-- LOGO -->
+                    <a href="./index.html">
+                        <img src="../assets/svgs/logo-type.svg" alt="tickety-assets" />
+                    </a>
+                    <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+                    <div class="block lg:hidden">
+                        <button class="p-1 outline-none" id="navbarToggler" data-target="#navigation">
+                            <svg class="text-dark w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8h16M4 16h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nav Menu -->
+                <div class="hidden w-full lg:block" id="navigation">
+                    <div
+                        class="flex flex-col items-baseline gap-4 mt-6 lg:justify-between lg:flex-row lg:items-center lg:mt-0">
+                        <div
+                            class="flex flex-col w-full ml-auto lg:w-auto gap-4 lg:gap-[50px] lg:items-center lg:flex-row">
+                            <a href="#!" class="nav-link-item">Flash Sale</a>
+                            <a href="#!" class="nav-link-item">Newest</a>
+                            <a href="#!" class="nav-link-item">Categories</a>
+                            <a href="#!" class="nav-link-item">Stories</a>
+                        </div>
+                        <div class="flex flex-col w-full ml-auto lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
+                            <a href="#!" class="btn-primary">
+                                Sign In
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container max-w-screen-xl pt-4 lg:pt-10 pb-[100px] overflow-hidden relative">
+            <div class="xl:px-[60px]">
+                <!-- Breadcrumb -->
+                <ul class="inline-flex mb-5">
+                    <li class="first:before:content-none before:content-['/'] before:mx-6">
+                        <a href="/index.html" class="text-lg text-iron-grey">
+                            Home
+                        </a>
+                    </li>
+                    <li class="first:before:content-none before:content-['/'] before:mx-6 text-lg text-iron-grey">
+                        <a href="#!" class="text-lg text-iron-grey">
+                            Browse
+                        </a>
+                    </li>
+                    <li class="first:before:content-none before:content-['/'] before:mx-6 text-lg text-iron-grey">
+                        <a href="#!" class="text-lg text-iron-grey">
+                            Checkout
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="flex flex-wrap items-center justify-center gap-y-[30px] lg:justify-between lg:items-start">
+                    <div class="max-w-[500px]">
+                        <img src="/public/assets/images/gallery-1.webp" class="w-[280px] h-[200px] rounded-2xl" alt="tickety-assets">
+                        <h1 class="text-[32px] font-bold mt-5 mb-[30px]">
+                            Design 101: Product Manager
+                        </h1>
+
+                        <!-- Visible input fields -->
+                        <div class="flex flex-col gap-5 mb-[30px]">
+                            <div class="flex flex-col gap-[10px]">
+                                <label for="name" class="text-lg font-medium">Complete Name</label>
+                                <input type="text" name="name" placeholder="Write your complete name"
+                                    class="px-5 py-[13px] placeholder:text-smoke-purple placeholder:font-normal font-semibold text-base rounded-[50px] bg-primary border-2 border-transparent border-solid focus:border-persian-pink focus:outline-none"
+                                    value="" id="visibleNameField">
+                            </div>
+                            <div class="flex flex-col gap-[10px]">
+                                <label for="email" class="text-lg font-medium">Email Address</label>
+                                <input type="email" name="email" placeholder="Write your email address"
+                                    class="px-5 py-[13px] placeholder:text-smoke-purple placeholder:font-normal font-semibold text-base rounded-[50px] bg-primary border-2 border-transparent border-solid focus:border-persian-pink focus:outline-none"
+                                    value="shayna@bwag" id="visibleEmailField">
+                            </div>
+                        </div>
+
+                        <!-- Payment details -->
+                        <div class="flex flex-col gap-4">
+                            <h6 class="text-xl font-semibold">
+                                Payment Details
+                            </h6>
+                            <!-- Entry ticket -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    22 entry ticket
+                                </p>
+                                <p class="text-base font-semibold">
+                                    $44,000
+                                </p>
+                            </div>
+                            <!-- Pro ticket -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    17 pro ticket
+                                </p>
+                                <p class="text-base font-semibold">
+                                    $87,000
+                                </p>
+                            </div>
+                            <!-- Enterprise ticket -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    2 enterprise ticket
+                                </p>
+                                <p class="text-base font-semibold">
+                                    $290,000
+                                </p>
+                            </div>
+                            <!-- Unique code -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    Unique code
+                                </p>
+                                <p class="text-base font-semibold">
+                                    $99
+                                </p>
+                            </div>
+                            <!-- Tax -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    Tax 22%
+                                </p>
+                                <p class="text-base font-semibold">
+                                    $18,000
+                                </p>
+                            </div>
+                            <!-- Grand total -->
+                            <div class="inline-flex items-center justify-between gap-4">
+                                <p class="text-base font-medium">
+                                    Grand total
+                                </p>
+                                <p class="text-[32px] text-secondary font-bold underline underline-offset-4">
+                                    $500,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" method=""
+                        class="bg-primary p-5 rounded-2xl flex flex-col gap-5 max-w-[380px] w-full">
+                        <p class="text-xl font-semibold">
+                            Payment method
+                        </p>
+                        <!-- Manual Transfer -->
+                        <div
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
+                            <div class="inline-flex items-center justify-between w-full">
+                                <label for="manualTransfer" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
+                                    Manual Transfer
+                                </label>
+                                <input type="radio" value="manual-transfer" id="manualTransfer" name="payment-method"
+                                    class="absolute inset-0 z-10 invisible peer/manual-transfer" checked>
+                                <div class="check-appearance"></div>
+
+                            </div>
+                            <!-- Bank Accounts -->
+                            <div class="flex flex-col gap-4 mt-4">
+                                <!-- Mandiri Account -->
+                                <div class="flex items-center gap-5">
+                                    <img src="/public/assets/svgs/logo-mandiri.svg" alt="tickety-assets">
+                                    <div>
+                                        <p class="text-xs font-medium mb-[2px]">
+                                            PT SHAYNA TICKET
+                                        </p>
+                                        <p class="text-lg font-semibold text-secondary">
+                                            1892 0930 0001
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- BCA Account -->
+                                <div class="flex items-center gap-5">
+                                    <img src="/public/assets/svgs/logo-bca.svg" alt="tickety-assets">
+                                    <div>
+                                        <p class="text-xs font-medium mb-[2px]">
+                                            PT SHAYNA TICKET
+                                        </p>
+                                        <p class="text-lg font-semibold text-secondary">
+                                            2208 1962 9102
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Virtual Account -->
+                        <div
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
+                            <div class="inline-flex items-center justify-between w-full">
+                                <label for="virtualAccount" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
+                                    Virtual Account
+                                </label>
+                                <input type="radio" value="virtual-account" id="virtualAccount" name="payment-method"
+                                    class="absolute inset-0 z-10 invisible peer/virtual-account">
+                                <div class="check-appearance"></div>
+                            </div>
+                        </div>
+                        <!-- Credit Card -->
+                        <div
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
+                            <div class="inline-flex items-center justify-between w-full">
+                                <label for="creditCard" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
+                                    Credit Card
+                                </label>
+                                <input type="radio" value="credit-card" id="creditCard" name="payment-method"
+                                    class="absolute inset-0 z-10 invisible peer/credit-card">
+                                <div class="check-appearance"></div>
+                            </div>
+                        </div>
+                        <!-- MyWallet -->
+                        <div
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
+                            <div class="inline-flex items-center justify-between w-full">
+                                <label for="myWallet" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
+                                    MyWallet
+                                </label>
+                                <input type="radio" value="my-wallet" id="myWallet" name="payment-method"
+                                    class="absolute inset-0 z-10 invisible peer/my-wallet">
+                                <div class="check-appearance"></div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden name & email input field -->
+                        <input type="text" name="name" id="completeName" placeholder="name" value="" class="text-black" hidden>
+                        <input type="email" name="email" id="emailAddress" placeholder="email" value="" class="text-black" hidden>
+                        <a href="/public/pages/success-checkout.html" class="btn-secondary">
+                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="tickety-assets">
+                            Make Payment Now
+                        </a>
+                        <!-- <button type="submit" class="btn-secondary">
+                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="tickety-assets">
+                            Make Payment Now
+                        </button> -->
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(() => {
+                $('#navbarToggler').on('click', function (e) {
+                    let navigationMenu = $(this).attr('data-target')
+                    $(navigationMenu).toggleClass('hidden')
+                })
+            })
+        </script>
+
+        <!-- append value in hidden field from Visible input fields -->
+        <script>
+            $('#visibleNameField').on('input', function() {
+                $('input:hidden[name=name]').val($(this).val())
+            })
+
+            $('#visibleEmailField').on('input', function() {
+                $('input:hidden[name=email]').val($(this).val())
+            })
+        </script>
+    </body>
+
+</html>
