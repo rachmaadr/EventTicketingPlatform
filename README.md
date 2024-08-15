@@ -46,6 +46,10 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 3. **Ticket Validation:**
    - Use a mobile application or barcode scanning device to scan tickets upon attendee arrival.
    - The system will validate the ticket and display its authenticity status in real-time.
+  
+### Skema Database
+
+![Skema Database](ERD%20Ticketing-event.png)
 
 ### Contribution
 
