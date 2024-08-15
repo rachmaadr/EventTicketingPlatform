@@ -23,7 +23,7 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 ### Technologies Used
 
 - **Backend:** Laravel
-- **Frontend:** Vue.js
+- **Frontend:** Tailwind CSS
 - **Database:** MySQL
 - **Barcode:** SimpleSoftwareIO/simple-qrcode for barcode generation and scanning
 - **PDF Generation:** DomPDF for Laravel
