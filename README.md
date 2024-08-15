@@ -49,7 +49,7 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
   
 ### Skema Database
 
-![Skema Database](ERD%20Ticketing-event.png)
+![Skema Database](ERD%20Ticketing-event(1).png)
 
 ### Contribution
 
