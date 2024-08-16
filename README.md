@@ -8,42 +8,19 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 
 ### Key Features
 
-<div align="center">
-  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="width:33%; padding: 10px; border: 1px solid #ddd;">Content Management System (CMS)</th>
-        <th style="width:33%; padding: 10px; border: 1px solid #ddd;">PDF Ticket Generation</th>
-        <th style="width:33%; padding: 10px; border: 1px solid #ddd;">Barcode Scanning</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #ddd;">
-            <ol>
-                <li>Easily manage various types of events.</li>
-                <li>Create, edit, and delete events.</li>
-                <li>Set event details such as description, location, date, and time.</li>
-            </ol>
-        </td>
-        <td style="padding: 10px; border: 1px solid #ddd;">
-            <ol> 
-                <li>Automatically generate tickets in PDF format.</li>
-                <li>Input Type: Email</li>
-                <li>Each ticket includes essential information such as event name, attendee details, and a unique barcode.</li>
-            </ol>
-        </td>
-        <td style="padding: 10px; border: 1px solid #ddd;">
-            <ol>
-                <li>Validate tickets using barcode scanning.</li>
-                <li>Scanning can be done via mobile applications or barcode scanning devices.</li>
-                <li>A real-time validation process to ensure ticket authenticity.</li>
-            </ol>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+- **Content Management System (CMS):**
+  - Easily manage various types of events.
+  - Create, edit, and delete events.
+  - Set event details such as description, location, date, and time.
+
+- **PDF Ticket Generation:**
+  - Automatically generate tickets in PDF format.
+  - Each ticket includes essential information such as event name, attendee details, and a unique barcode.
+
+- **Barcode Scanning:**
+  - Validate tickets using barcode scanning.
+  - Scanning can be done via mobile applications or barcode scanning devices.
+  - Real-time validation process to ensure ticket authenticity.
 
 
 ### Technologies Used
@@ -64,51 +41,32 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 ![Registrarion Page](loginPage.png)
 
 The registration page is designed for administrators to create their accounts. Here are the key components and their purposes:
+## Administrator Registration Fields
 
-<div align="center">
-  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="width:25%; padding: 10px; border: 1px solid #ddd;">Name Field</th>
-        <th style="width:25%; padding: 10px; border: 1px solid #ddd;">Email Field</th>
-        <th style="width:25%; padding: 10px; border: 1px solid #ddd;">Password Field</th>
-        <th style="width:25%; padding: 10px; border: 1px solid #ddd;">Confirm Password Field</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-            <ol>
-                <li>Label: "Name"</li>
-                <li>Input Type: Text</li>
-                <li>Description: <br>The administrator should enter their full name in this field. This will be used to personalize their experience and may be displayed in various parts of the application.</li>
-            </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-            <ol> 
-                <li>Label: "Email"</li>
-                <li>Input Type: Email</li>
-                <li>Description: <br>The administrator should enter a valid email address. This email will be used for account-related communications and to recover the password if needed.</li>
-            </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-            <ol>
-                <li>Label: "Password"</li>
-                <li>Input Type: Password</li>
-                <li>Description: <br>The administrator should create a strong password to secure their account. This password must meet the application's security requirements (e.g., minimum length, inclusion of special characters, etc.).</li>
-            </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-            <ol>
-                <li>Label: "Confirm Password"</li>
-                <li>Input Type: Password</li>
-                <li>Description: <br> The administrator should re-enter the same password as in the Password Field. This is to ensure that there are no typos in the password, providing an additional layer of confirmation.</li>
-            </ol>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+### Name Field
+- **Label**: "Name"
+- **Input Type**: Text
+- **Description**:  
+  The administrator should enter their full name in this field. This will be used to personalize their experience and may be displayed in various parts of the application.
+
+### Email Field
+- **Label**: "Email"
+- **Input Type**: Email
+- **Description**:  
+  The administrator should enter a valid email address. This email will be used for account-related communications and to recover the password if needed.
+
+### Password Field
+- **Label**: "Password"
+- **Input Type**: Password
+- **Description**:  
+  The administrator should create a strong password to secure their account. This password must meet the application's security requirements (e.g., minimum length, inclusion of special characters, etc.).
+
+### Confirm Password Field
+- **Label**: "Confirm Password"
+- **Input Type**: Password
+- **Description**:  
+  The administrator should re-enter the same password as in the Password Field. This is to ensure that there are no typos in the password, providing an additional layer of confirmation.
+
 
 
 ### Admin Dashboard Section Overview
@@ -148,111 +106,62 @@ The registration page is designed for administrators to create their accounts. H
 ### Admin Ticket Section Overview
 ![Ticket Page](ticketPage.png)
 This description explains the function and use of each column in the ticket table in detail.
-<div align="center">
-  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">ID</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Name</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Price</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Quantity</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Max</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ol>
-            <li>Unique identifier for each ticket.</li>
-            <li>Used for tracking and managing tickets in the system.</li>
-          </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ol>
-            <li>Name or title of the ticket.</li>
-            <li>Provides a description of the event or product associated with the ticket.</li>
-          </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ol>
-            <li>Cost of the ticket.</li>
-            <li>Displayed to users as the price they need to pay to acquire the ticket.</li>
-          </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ol>
-            <li>Number of tickets available for purchase.</li>
-            <li>Helps manage and display ticket availability to users.</li>
-          </ol>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ol>
-            <li>Maximum number of tickets that can be purchased or issued.</li>
-            <li>Enforces limits on ticket purchases to prevent overselling.</li>
-          </ol>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+## Ticket Table Columns
+
+This description explains the function and use of each column in the ticket table in detail:
+
+- **ID**
+  - Unique identifier for each ticket.
+  - Used for tracking and managing tickets in the system.
+
+- **Name**
+  - Name or title of the ticket.
+  - Provides a description of the event or product associated with the ticket.
+
+- **Price**
+  - Cost of the ticket.
+  - Displayed to users as the price they need to pay to acquire the ticket.
+
+- **Quantity**
+  - Number of tickets available for purchase.
+  - Helps manage and display ticket availability to users.
+
+- **Max**
+  - Maximum number of tickets that can be purchased or issued.
+  - Enforces limits on ticket purchases to prevent overselling.
+
 
 ### Admin Transaction Approve Section Overview
 ![Transaction Page](transactionPage.png)
-<div align="center">
-  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="width:15%; padding: 10px; border: 1px solid #ddd;">ID</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Ticket Code</th>
-        <th style="width:25%; padding: 10px; border: 1px solid #ddd;">Detail</th>
-        <th style="width:15%; padding: 10px; border: 1px solid #ddd;">Status</th>
-        <th style="width:15%; padding: 10px; border: 1px solid #ddd;">Total Price</th>
-        <th style="width:10%; padding: 10px; border: 1px solid #ddd;">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li>ID: Unique identifier for the transaction.</li>
-            <li>Used for tracking and managing each transaction in the system.</li>
-          </ul>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li>Ticket Code: Code assigned to the ticket.</li>
-            <li>Used for validation and identification purposes.</li>
-          </ul>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li>Detail: Information about the transaction.</li>
-            <li>Includes details about the event or product purchased.</li>
-          </ul>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li>Status: Current status of the transaction (e.g., Pending, Approved, Completed).</li>
-            <li>Indicates the state of the transaction.</li>
-          </ul>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li>Total Price: Total cost of the transaction.</li>
-            <li>Displays the amount to be paid for the ticket(s) purchased.</li>
-          </ul>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <ul>
-            <li><strong>Approve:</strong> Mark the transaction as approved and confirm the purchase.</li>
-            <li><strong>Send via Email:</strong> Send transaction details and ticket information to the user's email.</li>
-            <li><strong>Delete:</strong> Remove the transaction from the system after confirmation.</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+## Transaction Page Description
+
+This section explains the function and use of each column and action button on the transaction page.
+
+- **ID**
+  - **Description**: Unique identifier for the transaction.
+  - **Purpose**: Used for tracking and managing each transaction in the system.
+
+- **Ticket Code**
+  - **Description**: Code assigned to the ticket.
+  - **Purpose**: Used for validation and identification purposes.
+
+- **Detail**
+  - **Description**: Information about the transaction.
+  - **Purpose**: Includes details about the event or product purchased.
+
+- **Status**
+  - **Description**: Current status of the transaction (e.g., Pending, Approved, Completed).
+  - **Purpose**: Indicates the state of the transaction.
+
+- **Total Price**
+  - **Description**: Total cost of the transaction.
+  - **Purpose**: Displays the amount to be paid for the ticket(s) purchased.
+
+- **Actions**
+  - **Approve**: Mark the transaction as approved and confirm the purchase.
+  - **Send via Email**: Send transaction details and ticket information to the user's email.
+  - **Delete**: Remove the transaction from the system after confirmation.
+
 
 ### Admin Scan Barcode Section Overview
 ![Scan Barcode](scanbarcode.png)
@@ -317,6 +226,41 @@ This description explains the function and use of each column in the ticket tabl
             <li><strong>Invalid Ticket:</strong> Displays an error message if the ticket code is not found or invalid.</li>
             <li><strong>Scanning Issues:</strong> Provides an error message and prompts for manual entry if there are problems with the barcode scanner.</li>
           </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Ticket Simple Design Overview
+![Ticket](ticket.png)
+<div align="center">
+  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">ID</th>
+        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Name</th>
+        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Price</th>
+        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Quantity</th>
+        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
+          <p>Unique identifier for each ticket. This ID helps track and manage individual tickets.</p>
+        </td>
+        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
+          <p>The name of the event or product the ticket is for.</p>
+        </td>
+        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
+          <p>Cost of the ticket. Displays the price to be paid.</p>
+        </td>
+        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
+          <p>Number of tickets available or purchased.</p>
+        </td>
+        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
+          <p>Maximum number of tickets that can be bought or allocated.</p>
         </td>
       </tr>
     </tbody>
