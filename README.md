@@ -32,6 +32,9 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 - **PDF Generation:** DomPDF for Laravel
 - **FakerPhP:** PHP library that generates fake data for you. Whether you need to bootstrap database.
 
+## User Flow Overview
+![User FLow](userFlow-ticketingEventPlatform.png)
+
   
 ### Skema Database
 
