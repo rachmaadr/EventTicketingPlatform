@@ -41,8 +41,6 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 ![Registrarion Page](loginPage.png)
 
 The registration page is designed for administrators to create their accounts. Here are the key components and their purposes:
-## Administrator Registration Fields
-
 ### Name Field
 - **Label**: "Name"
 - **Input Type**: Text
@@ -106,10 +104,6 @@ The registration page is designed for administrators to create their accounts. H
 ### Admin Ticket Section Overview
 ![Ticket Page](ticketPage.png)
 This description explains the function and use of each column in the ticket table in detail.
-## Ticket Table Columns
-
-This description explains the function and use of each column in the ticket table in detail:
-
 - **ID**
   - Unique identifier for each ticket.
   - Used for tracking and managing tickets in the system.
@@ -133,8 +127,6 @@ This description explains the function and use of each column in the ticket tabl
 
 ### Admin Transaction Approve Section Overview
 ![Transaction Page](transactionPage.png)
-## Transaction Page Description
-
 This section explains the function and use of each column and action button on the transaction page.
 
 - **ID**
@@ -234,41 +226,24 @@ This section explains the function and use of each column and action button on t
 
 ### Ticket Simple Design Overview
 ![Ticket](ticket.png)
-<div align="center">
-  <table style="width:80%; border: 1px solid #ddd; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">ID</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Name</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Price</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Quantity</th>
-        <th style="width:20%; padding: 10px; border: 1px solid #ddd;">Maximum</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <p>Unique identifier for each ticket. This ID helps track and manage individual tickets.</p>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <p>The name of the event or product the ticket is for.</p>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <p>Cost of the ticket. Displays the price to be paid.</p>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <p>Number of tickets available or purchased.</p>
-        </td>
-        <td style="vertical-align:top; padding: 10px; border: 1px solid #ddd;">
-          <p>Maximum number of tickets that can be bought or allocated.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+## Ticket Table Columns
 
+This section describes the function and purpose of each column in the ticket table.
 
+- **ID**
+  - Unique identifier for each ticket. This ID helps track and manage individual tickets.
 
+- **Name**
+  - The name of the event or product the ticket is for.
+
+- **Price**
+  - Cost of the ticket. Displays the price to be paid.
+
+- **Quantity**
+  - Number of tickets available or purchased.
+
+- **Maximum**
+  - Maximum number of tickets that can be bought or allocated.
 
 ### Usage
 
