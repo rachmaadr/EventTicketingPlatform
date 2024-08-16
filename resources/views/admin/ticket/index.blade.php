@@ -10,11 +10,11 @@
       <div class="mb-10 flex space-x-4">
         <a href="{{ route('admin.events.tickets.create', $event->id) }}"
            class="px-4 py-2 font-bold text-white bg-green-500 rounded">
-          + Buat Ticket
+          + Add Ticket
         </a>
         <a href="{{ route('admin.events.index') }}"
           class="px-4 py-2 font-bold text-white bg-red-500 rounded">
-          Kembali
+          Back
         </a>
       </div>
       <div class="overflow-hidden shadow sm:rounded-md">
@@ -28,11 +28,10 @@
             <thead class="bg-gray-50">
               <tr>
                 <th style="max-width: 1%" class="px-6 py-3">ID</th>
-                <th class="px-6 py-3">Nama</th>
-                <th class="px-6 py-3">Harga</th>
+                <th class="px-6 py-3">Name</th>
+                <th class="px-6 py-3">Price</th>
                 <th class="px-6 py-3">Qty</th>
                 <th class="px-6 py-3">Maks.</th>
-                <th style="max-width: 1%" class="px-6 py-3">Aksi</th>
               </tr>
             </thead>
             <tbody>

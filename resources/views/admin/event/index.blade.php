@@ -9,7 +9,7 @@
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="mb-10">
         <a href="{{ route('admin.events.create') }}" class="px-2 py-1 font-bold text-white bg-green-500 rounded">
-          + Buat Event
+          + Add Event
         </a>
       </div>
       <div class="overflow-hidden shadow sm:rounded-md">
@@ -23,11 +23,11 @@
             <thead class="bg-gray-50">
               <tr>
                 <th style="max-width: 1%" class="px-6 py-3">ID</th>
-                <th class="px-6 py-3">Nama</th>
-                <th class="px-6 py-3">Kategori</th>
-                <th class="px-6 py-3">Tanggal</th>
-                <th class="px-6 py-3">Durasi</th>
-                <th style="max-width: 1%" class="px-6 py-3">Aksi</th>
+                <th class="px-6 py-3">Name</th>
+                <th class="px-6 py-3">Category</th>
+                <th class="px-6 py-3">Date</th>
+                <th class="px-6 py-3">Duration</th>
+                <th style="max-width: 1%" class="px-6 py-3">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -41,7 +41,7 @@
                   <td class="px-6 py-4 space-y-1 text-center">
                     <a href="{{ route('admin.events.transactions.index', $event->id) }}"
                        class="block px-2 py-1 text-white bg-yellow-500 rounded">
-                      Transaksi
+                      Transaction
                     </a>
                     
                     <a href="{{ route('admin.events.scan', $event->id) }}"
@@ -51,7 +51,7 @@
 
                     <a href="{{ route('admin.events.tickets.index', $event->id) }}"
                        class="block px-2 py-1 text-white bg-green-500 rounded">
-                      Tiket
+                      Ticket
                     </a>
 
                     <a href="{{ route('admin.events.edit', $event->id) }}"
@@ -63,7 +63,7 @@
                       @csrf
                       @method('DELETE')
                       <button type="submit" class="w-full px-2 py-1 text-white bg-red-500 rounded">
-                        Hapus
+                        Delete
                       </button>
                     </form>
                   </td>

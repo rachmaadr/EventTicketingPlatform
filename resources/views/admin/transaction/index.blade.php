@@ -1,7 +1,7 @@
 <x-app-layout>
   <x-slot name="header">
     <h2 class="text-xl font-semibold leading-tight text-gray-800">
-      Event &raquo; {{ $event->name }} &raquo; Transaksi
+      Event &raquo; {{ $event->name }} &raquo; Transaction
     </h2>
   </x-slot>
 
@@ -9,7 +9,7 @@
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="mb-10">
         <a href="{{ route('admin.events.index') }}" class="px-2 py-1 font-bold text-white bg-red-500 rounded">
-          Kembali
+          Back
         </a>
       </div>
       <div class="overflow-hidden shadow sm:rounded-md">
@@ -28,7 +28,6 @@
                 <th class="px-6 py-3">Status</th>
                 <th class="px-6 py-3">Total Price</th>
                 <th class="px-6 py-3">Ticket</th>
-                <th style="max-width: 1%" class="px-6 py-3">Aksi</th>
               </tr>
             </thead>
             <tbody>
