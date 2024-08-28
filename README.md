@@ -1,7 +1,6 @@
 ## Repository Description
 
 ### Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning
-### Registration Page Explanation
 ![Landing Page](landingPage.png)
 
 Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning. Manage events, generate PDF tickets with unique barcodes, and validate tickets in real-time using SimpleSoftwareIO/simple-qrcode. Built with Laravel and Vue.js. Easy to install, configure, and use. Contributions welcome!
