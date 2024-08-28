@@ -39,35 +39,6 @@ Event Ticket Sales System with CMS, PDF Ticket Generation, and Barcode Scanning.
 
 ![Skema Database](ERD%20Ticketing-event.png)
 
-### Registration Page Explanation
-![Registrarion Page](loginPage.png)
-
-The registration page is designed for administrators to create their accounts. Here are the key components and their purposes:
-### Name Field
-- **Label**: "Name"
-- **Input Type**: Text
-- **Description**:  
-  The administrator should enter their full name in this field. This will be used to personalize their experience and may be displayed in various parts of the application.
-
-### Email Field
-- **Label**: "Email"
-- **Input Type**: Email
-- **Description**:  
-  The administrator should enter a valid email address. This email will be used for account-related communications and to recover the password if needed.
-
-### Password Field
-- **Label**: "Password"
-- **Input Type**: Password
-- **Description**:  
-  The administrator should create a strong password to secure their account. This password must meet the application's security requirements (e.g., minimum length, inclusion of special characters, etc.).
-
-### Confirm Password Field
-- **Label**: "Confirm Password"
-- **Input Type**: Password
-- **Description**:  
-  The administrator should re-enter the same password as in the Password Field. This is to ensure that there are no typos in the password, providing an additional layer of confirmation.
-
-
 
 ### Admin Dashboard Section Overview
 ![Dashboard Page](dashboardPage.png)
